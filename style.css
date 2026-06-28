@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, blue, red);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.box .display {
+    background-color: black;
+    color: white;
+    height: auto;
+    width: 455px;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 80px 17px;
+    padding-top: 90px;
+    text-align: right;
+}
+
+.box h1 {
+    padding: 10px 20px;
+}
+
+#display {
+    width: 100%;
+    height: 80px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-size: 40px;
+    text-align: right;
+    padding: 20px;
+    
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.button .function {
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #6b6b6b;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 3px 2px;
+}
+
+.button .operator {
+    height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ff9500;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 3px 5px;
+}
+
+.button .function1 {
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #6b6b6b;
+    color: #ffffff;
+    font-size: 30px;
+    margin: 3px 5px;
+}
+
+.function,
+.function1,
+.operator:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .box .display {
+        width: 380px;
+        height: auto;
+        margin: 50px 15px;
+        padding-top: 70px;
+    }
+
+    .button .function,
+    .button .operator {
+        width: 85px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    .button .function1 {
+        width: 180px;
+        height: 65px;
+        font-size: 25px;
+    }
+
+    .box h1 {
+        font-size: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .box .display {
+        width: 100%;
+        height: auto;
+        margin: 20px 10px;
+        padding-top: 50px;
+    }
+
+    .button .function,
+    .button .operator {
+        width: 22%;
+        height: 55px;
+        font-size: 20px;
+        margin: 4px 2px;
+    }
+
+    .button .function1 {
+        width: 46%;
+        height: 55px;
+        font-size: 20px;
+    }
+
+    .box h1 {
+        font-size: 32px;
+        padding: 10px;
+    }
+}
