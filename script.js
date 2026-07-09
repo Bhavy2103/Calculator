@@ -27,7 +27,7 @@ function ac() {
 
 function result() {
     if (display.value === "") {
-        display.innerHTML = "Invalid Fromate Used";
+        alert("Invalid Fromate Used");
     } else {
         display.value = eval(display.value);
     }
@@ -35,7 +35,7 @@ function result() {
 
 function modules() {
     if (display.value === "") {
-        display.innerHTML = "Invalid Fromate Used";
+        alert("Invalid Fromate Used");
     } else {
         display.value = Number(display.value) / 100.00;
     }
@@ -43,11 +43,63 @@ function modules() {
 
 function minpul() {
     if (display.value === "") {
-        display.innerHTML = "Invalid Fromate Used";
+        alert("Invalid Fromate Used");
     } else {
         display.value = -Number(display.value)
     }
 }
+
+function pluses() {
+    if (display.value === "") {
+        alert("Invalid Fromate Used");
+        return;
+    }
+    let lastchar = display.value.slice(-1)
+    if ("+-*/".includes(lastchar)) {
+        return;
+    }
+
+    display.value += "+";
+
+}
+
+function minuses() {
+    if (display.value === "") {
+        alert("Invalid Fromate Used");
+        return;
+    } let lastchar = display.value.slice(-1)
+    if ("+-*/".includes(lastchar)) {
+        return;
+    }
+    display.value += "-";
+
+}
+
+function multiplication() {
+    if (display.value === "") {
+        alert("Invalid Fromate Used");
+        return;
+    } let lastchar = display.value.slice(-1)
+    if ("+-*/".includes(lastchar)) {
+        return;
+    }
+    display.value += "*";
+
+}
+
+function divison() {
+    if (display.value === "") {
+        alert("Invalid Fromate Used");
+        return;
+    } 
+    let lastchar = display.value.slice(-1)
+    if ("+-*/".includes(lastchar)) {
+        return;
+    }
+    display.value += "/";
+
+}
+
 
 function storeData() {
     localStorage.setItem("display", display.value);

@@ -13,22 +13,22 @@
         <div class="display"  >
             <label for="display">-<input type="text" id="display" value="" readonly></label>
             <div class="button">
-                <input type="button" value="AC" class="function" value="0" readonly onclick="ac();storeData()">
+                <input type="button" value="AC" class="function" value="0" onclick="ac();storeData()">
                 <input type="button" value="+/-" class="function" onclick="minpul();storeData()">
                 <input type="button" value="%" class="function" onclick="modules();storeData()">
-                <input type="button" value="/" class="operator" onclick="p1();storeData()">
+                <input type="button" value="/" class="operator" onclick="divison('/');storeData()">
                 <input type="button" value="7" class="function" onclick="display.value+='7';storeData()">
                 <input type="button" value="8" class="function" onclick="display.value+='8';storeData()">
                 <input type="button" value="9" class="function" onclick="display.value+='9';storeData()">
-                <input type="button" value="*" class="operator" onclick="display.value+='*';storeData()">
+                <input type="button" value="*" class="operator" onclick="multiplication('*');storeData()">
                 <input type="button" value="4" class="function" onclick="display.value+='4';storeData()">
                 <input type="button" value="5" class="function" onclick="display.value+='5';storeData()">
                 <input type="button" value="6" class="function" onclick="display.value+='6';storeData()">
-                <input type="button" value="-" class="operator" onclick="display.value+='-';storeData()">
+                <input type="button" value="-" class="operator" onclick="minuses('-');storeData()">
                 <input type="button" value="1" class="function" onclick="display.value+='1';storeData()">
                 <input type="button" value="2" class="function" onclick="display.value+='2';storeData()">
                 <input type="button" value="3" class="function" onclick="display.value+='3';storeData()">
-                <input type="button" value="+" class="operator" onclick="display.value+='+';storeData()">
+                <input type="button" value="+" class="operator" onclick="pluses('+');storeData()">
                 <input type="button" value="0" class="function" onclick="display.value+='0';storeData()">
                 <input type="button" value="00" class="function" onclick="display.value+='00';storeData()">
                 <input type="button" value="." class="function" onclick="display.value+='.';storeData()">
